@@ -35,7 +35,7 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
-/* Mobile Membership Popup */
+/* Mobile Membership Popup MUST REMOVE AFTER JOINING */
 .mobile-popup {
     position: fixed;
     inset: 0;
