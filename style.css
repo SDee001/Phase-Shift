@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.glass-nav {
+    background-color: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(30, 41, 59, 1);
+}
+
+.hero-pattern {
+    background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.dots-pattern {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Mobile Membership Popup */
+.mobile-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.mobile-popup.hidden {
+    display: none;
+}
+
+.popup-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 360px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-card h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.popup-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.popup-cta {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    background: #2563eb;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.7rem;
+    border-radius: 0.75rem;
+}
+
+#popup-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #64748b;
+    cursor: pointer;
+}
+
